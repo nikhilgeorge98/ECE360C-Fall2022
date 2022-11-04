@@ -52,7 +52,7 @@ public class Program2 implements ProgramTwoInterface {
         // }
 
         City min;
-        ArrayList<City> visited = new ArrayList<>(); 
+        // ArrayList<City> visited = new ArrayList<>(); 
 
         while(heap.toArrayList().size()!=0){
             // System.out.println("Heap------>");
@@ -67,7 +67,8 @@ public class Program2 implements ProgramTwoInterface {
             // }
             // System.out.println();
             // System.out.println("Extracted node: "+min.getName()+" mindist:"+min.getMinDist());
-            visited.add(min);
+            if(min.getName() == dest.getName()) return min.getMinDist();
+            // visited.add(min);
             // for(City m : visited){
             //     System.out.print(m.getName()+"----"+m.getMinDist()+" ");
             // }
