@@ -1,3 +1,4 @@
+package Programming_Assignment_2;
 import java.util.ArrayList;
 
 // This class contains the main arguments for each function. Used the functions provided
